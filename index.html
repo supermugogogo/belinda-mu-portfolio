@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Belinda Mu — educator, researcher-in-training, and multilingual learning advocate." />
+  <title>Belinda Mu | Educator & Researcher</title>
+  <!-- Tailwind CSS CDN：单文件样式框架 -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Font Awesome CDN：模块与社交图标 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  <script>
+    tailwind.config = { theme: { extend: { colors: { cream:'#fffaf2', paper:'#fffdf9', coral:'#d9644a', sage:'#39766d', ink:'#283b38', sand:'#f4e5d0', blush:'#f9e1d7' }, fontFamily: { serif:['Georgia','Cambria','serif'], sans:['Inter','ui-sans-serif','system-ui','sans-serif'] } } } };
+  </script>
+  <style>
+    html { scroll-behavior: smooth; }
+    body { background: #fffaf2; }
+    ::selection { background: #f7c4b5; color: #283b38; }
+    .leaf { border-radius: 76% 24% 70% 30% / 31% 67% 33% 69%; }
+    .section-title::after { content:''; display:block; width:52px; height:3px; margin-top:14px; background:#d9644a; }
+    /* 各模块插画：统一使用温暖教育者风格，保留足够留白避免影响文字阅读 */
+    /* 取消背景大图，改为标题上方的小插画标识 */
+    #summary, #education, #skills, #experience, #licensure, #honors, #contact { background-image: none; }
+    #summary .flex.h-12.w-12, #education .flex.h-12.w-12, #skills .flex.h-12.w-12, #research .flex.h-12.w-12, #experience .flex.h-12.w-12, #licensure .flex.h-12.w-12, #honors .flex.h-12.w-12, #contact .flex.h-12.w-12 { width: 9.5rem; height: 5.75rem; border-radius: 1rem; background-color: transparent; background-repeat: no-repeat; background-position: center; background-size: cover; }
+    #summary .flex.h-12.w-12 { background-image: url('illustration-summary.png'); }
+    #education .flex.h-12.w-12 { background-image: url('illustration-education.png'); }
+    #skills .flex.h-12.w-12 { background-image: url('illustration-skills.png'); }
+    #research .flex.h-12.w-12 { background-image: url('illustration-research.png'); }
+    #experience .flex.h-12.w-12 { background-image: url('illustration-experience.png'); }
+    #licensure .flex.h-12.w-12, #honors .flex.h-12.w-12 { background-image: url('illustration-credentials.png'); }
+    #contact .flex.h-12.w-12 { background-image: url('illustration-contact.png'); }
+    #summary .flex.h-12.w-12 i, #education .flex.h-12.w-12 i, #skills .flex.h-12.w-12 i, #research .flex.h-12.w-12 i, #experience .flex.h-12.w-12 i, #licensure .flex.h-12.w-12 i, #honors .flex.h-12.w-12 i, #contact .flex.h-12.w-12 i { display: none; }
+  </style>
+</head>
+<body class="font-sans text-ink antialiased">
+  <!-- 顶部导航：严格对应简历原始模块顺序；href 可用于修改页面内跳转位置 -->
+  <header class="sticky top-0 z-50 border-b border-sand/80 bg-cream/95 backdrop-blur">
+    <nav class="mx-auto flex max-w-6xl items-center justify-between px-5 py-4" aria-label="Main navigation">
+      <!-- 内部锚点链接：回到页面顶部 -->
+      <a href="#top" class="font-serif text-2xl font-bold text-ink">ZM<span class="text-coral">.</span></a>
+      <div class="hidden items-center gap-5 text-sm font-semibold text-ink lg:flex">
+        <!-- 内部锚点链接：专业概述 --> <a href="#summary" class="hover:text-coral">Summary</a>
+        <!-- 内部锚点链接：教育背景 --> <a href="#education" class="hover:text-coral">Education</a>
+        <!-- 内部锚点链接：研究经历 --> <a href="#research" class="hover:text-coral">Research</a>
+        <!-- 内部锚点链接：教学经历 --> <a href="#experience" class="hover:text-coral">Experience</a>
+        <!-- 内部锚点链接：联系方式 --> <a href="#contact" class="hover:text-coral">Contact</a>
+      </div>
+      <!-- 内部锚点链接：快速联系 --> <a href="#contact" class="rounded-full bg-coral px-4 py-2 text-sm font-bold text-white transition hover:bg-ink">Get in touch</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <!-- 页首信息：姓名、照片、邮箱、地址；严格对应简历顶部信息 -->
+    <section class="relative overflow-hidden bg-sand">
+      <div class="absolute -right-20 top-0 h-64 w-64 rounded-full bg-blush/70"></div><div class="leaf absolute -left-16 bottom-4 h-36 w-48 bg-sage/15"></div>
+      <div class="relative mx-auto grid max-w-6xl items-center gap-12 px-5 py-16 md:grid-cols-[1.2fr_.8fr] md:py-20">
+        <div>
+          <p class="mb-4 font-bold uppercase tracking-[.22em] text-sage">Educator · Researcher-in-Training</p>
+          <h1 class="font-serif text-5xl font-bold leading-none text-ink md:text-7xl">Belinda<br /><span class="text-coral">Mu</span></h1>
+          <p class="mt-3 text-sm font-semibold uppercase tracking-[.16em] text-sage">Zongchao Mu</p>
+          <p class="mt-6 max-w-xl text-lg leading-8">Supporting multilingual learners through inclusive curriculum, immersive instruction, and cross-cultural research.</p>
+          <div class="mt-8 flex flex-wrap gap-x-5 gap-y-3 text-sm font-semibold">
+            <!-- 邮件链接：如需更换邮箱，请修改 href="mailto:..." --> <a href="mailto:supermugogogo@gmail.com" class="text-sage hover:text-coral"><i class="fa-regular fa-envelope mr-2"></i>supermugogogo@gmail.com</a>
+            <span><i class="fa-solid fa-location-dot mr-2 text-coral"></i>Charlotte, NC</span>
+          </div>
+        </div>
+        <!-- 个人照片：如需替换，请用同名 profile-photo.png 覆盖 outputs 文件夹内的图片 -->
+        <div class="mx-auto w-full max-w-[310px]"><div class="relative"><div class="leaf absolute -inset-4 bg-coral/20"></div><img src="profile-photo.png" alt="Portrait of Belinda Mu" class="relative aspect-[4/5] w-full rounded-[2rem] object-cover object-center shadow-xl shadow-coral/20" /></div></div>
+      </div>
+    </section>
+
+    <!-- PROFESSIONAL SUMMARY：简历第 1 个内容模块 -->
+    <section id="summary" class="scroll-mt-20 bg-paper py-16 md:py-20"><div class="mx-auto grid max-w-6xl gap-10 px-5 md:grid-cols-[.6fr_1.4fr]"><div><div class="flex h-12 w-12 items-center justify-center rounded-2xl bg-blush text-coral"><i class="fa-solid fa-heart" aria-hidden="true"></i></div><p class="mt-5 text-sm font-bold uppercase tracking-[.18em] text-sage">01 / Professional Summary</p><h2 class="section-title mt-3 font-serif text-4xl font-bold">A learner-centered educator.</h2></div><p class="self-center text-lg leading-8">Highly accomplished educator and researcher-in-training with over 11 years of extensive experience supporting multilingual and bilingual learners in K–12 and immersive settings. A current Ph.D. student at UNC Charlotte specializing in Curriculum and Instruction, combining deep practical teaching expertise with emerging quantitative research capabilities, cross-cultural qualitative research, and foundational Python programming.</p></div></section>
+
+    <!-- EDUCATION：简历第 2 个内容模块，保持原始学校顺序 -->
+    <section id="education" class="scroll-mt-20 py-16 md:py-20"><div class="mx-auto max-w-6xl px-5"><div class="flex items-end justify-between gap-4"><div><div class="flex h-12 w-12 items-center justify-center rounded-2xl bg-sage/10 text-sage"><i class="fa-solid fa-graduation-cap" aria-hidden="true"></i></div><p class="mt-5 text-sm font-bold uppercase tracking-[.18em] text-sage">02 / Education</p><h2 class="section-title mt-3 font-serif text-4xl font-bold">Education</h2></div><i class="fa-solid fa-book-open hidden text-6xl text-sand md:block" aria-hidden="true"></i></div><div class="mt-10 grid gap-5 md:grid-cols-3">
+      <article class="rounded-3xl border border-sand bg-paper p-7"><p class="font-bold text-coral">In-progress / Incoming Fall 2026</p><h3 class="mt-4 font-serif text-2xl font-bold">Ph.D. in Education</h3><p class="mt-2 font-semibold text-sage">University of North Carolina at Charlotte</p><p class="mt-3 text-sm leading-6">Curriculum and Instruction<br />Focus: Curriculum and Educators Development<br />Charlotte, NC</p></article>
+      <article class="rounded-3xl border border-sand bg-paper p-7"><p class="font-bold text-coral">Graduation Year: 2024</p><h3 class="mt-4 font-serif text-2xl font-bold">M.S. in Innovation in Education</h3><p class="mt-2 font-semibold text-sage">Elon University</p><p class="mt-3 text-sm leading-6">Honors: Member of Phi Kappa Phi Honor Society<br />Elon, NC</p></article>
+      <article class="rounded-3xl border border-sand bg-paper p-7"><p class="font-bold text-coral">Graduation Year: 2010</p><h3 class="mt-4 font-serif text-2xl font-bold">B.A. in English Education</h3><p class="mt-2 font-semibold text-sage">Zaozhuang University</p><p class="mt-3 text-sm leading-6">Shandong, China</p></article>
+    </div></div></section>
+
+    <!-- TECHNICAL & LANGUAGE SKILLS：简历第 3 个内容模块 -->
+    <section id="skills" class="scroll-mt-20 bg-sage py-16 text-white md:py-20"><div class="mx-auto max-w-6xl px-5"><div class="flex h-12 w-12 items-center justify-center rounded-2xl bg-white/15 text-sand"><i class="fa-solid fa-toolbox" aria-hidden="true"></i></div><p class="mt-5 text-sm font-bold uppercase tracking-[.18em] text-sand">03 / Technical & Language Skills</p><h2 class="mt-3 font-serif text-4xl font-bold">Skills</h2><div class="mt-10 grid gap-5 md:grid-cols-3"><article class="rounded-3xl bg-white/10 p-7"><i class="fa-solid fa-microscope text-2xl text-sand" aria-hidden="true"></i><h3 class="mt-4 text-xl font-bold">Research & Data Toolsets</h3><p class="mt-3 leading-7 text-white/85">Foundational Python (basic logic, control flow, Turtle Graphics) and foundational algebra.</p></article><article class="rounded-3xl bg-white/10 p-7"><i class="fa-solid fa-laptop text-2xl text-sand" aria-hidden="true"></i><h3 class="mt-4 text-xl font-bold">Educational Technology</h3><p class="mt-3 leading-7 text-white/85">Wordwall, Kahoot, Quizizz, Seesaw, BrainPOP, Generation Genius, and Flocabulary.</p></article><article class="rounded-3xl bg-white/10 p-7"><i class="fa-solid fa-language text-2xl text-sand" aria-hidden="true"></i><h3 class="mt-4 text-xl font-bold">Languages</h3><p class="mt-3 leading-7 text-white/85">Native Mandarin Chinese and fluent English; bilingual instructor.</p></article></div></div></section>
+
+    <!-- RESEARCH BACKGROUND：简历第 4 个内容模块 -->
+    <section id="research" class="scroll-mt-20 py-16 md:py-20"><div class="mx-auto grid max-w-6xl gap-10 px-5 md:grid-cols-[.75fr_1.25fr]"><div><!-- 保留原有模块大标题；研究海报显示在标题下方 --><div class="flex h-12 w-12 items-center justify-center rounded-2xl bg-blush text-coral"><i class="fa-solid fa-magnifying-glass-chart" aria-hidden="true"></i></div><p class="mt-5 text-sm font-bold uppercase tracking-[.18em] text-sage">04 / Research Background</p><h2 class="section-title mt-3 font-serif text-4xl font-bold">Research Background</h2><!-- 研究海报图片：如需替换，请用同名 capstone-poster.jpg 覆盖 outputs 文件夹内的图片 --><figure class="mt-8 overflow-hidden rounded-3xl border border-sand bg-paper shadow-sm"><img src="capstone-poster.jpg" alt="Capstone poster: Teachers' Global Perspectives on Restorative Approaches to Classroom Management" class="w-full object-cover" /><figcaption class="border-t border-sand px-5 py-4"><p class="text-xs font-bold uppercase tracking-[.16em] text-sage">Capstone Research Poster</p><p class="mt-1 font-serif text-lg font-bold">Teachers' Global Perspectives</p></figcaption></figure></div><article class="rounded-3xl border border-sand bg-paper p-7 md:p-9"><p class="font-bold text-coral">Graduate Researcher · Elon University</p><h3 class="mt-3 font-serif text-2xl font-bold">Restorative Practices in Classroom Management Across Different Cultural Contexts</h3><ul class="mt-6 space-y-4 leading-7"><li class="flex gap-3"><i class="fa-solid fa-seedling mt-1 text-sage" aria-hidden="true"></i><span>Conducted cross-cultural qualitative research with educators and administrators from five countries.</span></li><li class="flex gap-3"><i class="fa-solid fa-seedling mt-1 text-sage" aria-hidden="true"></i><span>Designed semi-structured interview protocols and led academic data collection.</span></li><li class="flex gap-3"><i class="fa-solid fa-seedling mt-1 text-sage" aria-hidden="true"></i><span>Analyzed respect, authority, and social-emotional learning in multicultural education settings.</span></li></ul></article></div></section>
+
+    <!-- PROFESSIONAL TEACHING EXPERIENCE：简历第 5 个内容模块 -->
+    <section id="experience" class="scroll-mt-20 bg-blush/55 py-16 md:py-20"><div class="mx-auto max-w-6xl px-5"><div class="flex h-12 w-12 items-center justify-center rounded-2xl bg-coral/15 text-coral"><i class="fa-solid fa-chalkboard-user" aria-hidden="true"></i></div><p class="mt-5 text-sm font-bold uppercase tracking-[.18em] text-sage">05 / Professional Teaching Experience</p><h2 class="section-title mt-3 font-serif text-4xl font-bold">Professional Teaching Experience</h2><div class="mt-10 grid gap-6 lg:grid-cols-2"><article class="rounded-3xl bg-paper p-7 shadow-sm"><p class="font-bold text-coral">Aug 2021 – Present</p><h3 class="mt-2 font-serif text-2xl font-bold">Mandarin Immersion Teacher</h3><p class="mt-2 font-semibold text-sage">Harrisburg Elementary School & Cox Mill Elementary School</p><p class="mt-1 text-sm">Cabarrus County, NC</p><ul class="mt-5 space-y-3 text-sm leading-6"><li>Designed Mandarin, math, science, and social studies curricula for Kindergarten and 4th Grade immersion classrooms.</li><li>Collaborated in school- and district-level PLCs to review data, align standards, and co-design curriculum maps.</li><li>Developed differentiated strategies and integrated Seesaw, Kahoot, and BrainPOP to support formative assessment.</li></ul><!-- 中文词汇网页：嵌入 Mandarin Immersion Teacher 工作经历卡片 --> <div class="mt-6 rounded-2xl border border-sage/20 bg-sage/5 p-5"><div class="flex items-start gap-3"><i class="fa-solid fa-language mt-1 text-lg text-coral" aria-hidden="true"></i><div><p class="font-bold text-ink">Chinese Vocabulary Learning Hub</p><p class="mt-1 text-sm leading-6">Interactive Chinese vocabulary practice for multilingual learners.</p><!-- 中文词汇网页链接：本地电脑使用；网站正式发布后，请替换为线上公开网址 --> <a href="https://supermugogogo.github.io/roll-and-read/" target="_blank" rel="noopener" class="mt-3 inline-flex text-sm font-bold text-coral hover:text-sage">Open learning resource <i class="fa-solid fa-arrow-up-right-from-square ml-2"></i></a></div></div></div></article><article class="rounded-3xl bg-paper p-7 shadow-sm"><p class="font-bold text-coral">May 2014 – Jun 2021</p><h3 class="mt-2 font-serif text-2xl font-bold">English Language Instructor<span class="mt-1 block text-xl text-sage">IELTS Testing Instructor</span></h3><p class="mt-3 text-sm">China</p><ul class="mt-5 space-y-3 text-sm leading-6"><li>Delivered multi-level language acquisition instruction focused on literacy, listening comprehension, and expressive speaking.</li><li>Built culturally relevant lessons that broadened global awareness for diverse student age groups.</li><li>Mentored advanced candidates preparing for international English proficiency examinations.</li></ul><!-- 雅思口语学习网页：嵌入 English Language Instructor 工作经历卡片 --> <div class="mt-6 rounded-2xl border border-coral/20 bg-coral/5 p-5"><div class="flex items-start gap-3"><i class="fa-solid fa-comments mt-1 text-lg text-coral" aria-hidden="true"></i><div><p class="font-bold text-ink">IELTS Speaking Learning Hub</p><p class="mt-1 text-sm leading-6">Interactive resources for IELTS Speaking practice, strategies, and confidence building.</p><!-- 雅思口语网页链接：本地电脑使用；网站正式发布后，请替换为线上公开网址 --> <a href="https://ielts-speaking-public.supermugogogo.chatgpt.site/ielts-speaking-course/index.html#part1" target="_blank" rel="noopener" class="mt-3 inline-flex text-sm font-bold text-coral hover:text-sage">Explore IELTS Speaking resource <i class="fa-solid fa-arrow-up-right-from-square ml-2"></i></a></div></div></div></article></div></div></section>
+
+    <!-- LICENSURE & PROFESSIONAL AFFILIATIONS：简历第 6 个内容模块 -->
+
+    <section id="licensure" class="scroll-mt-20 py-16 md:py-20"><div class="mx-auto max-w-6xl px-5"><div class="flex h-12 w-12 items-center justify-center rounded-2xl bg-sage/10 text-sage"><i class="fa-solid fa-certificate" aria-hidden="true"></i></div><p class="mt-5 text-sm font-bold uppercase tracking-[.18em] text-sage">06 / Licensure & Professional Affiliations</p><h2 class="section-title mt-3 font-serif text-4xl font-bold">Licensure & Affiliations</h2><div class="mt-10 grid gap-5 md:grid-cols-2"><article class="rounded-3xl border border-sand bg-paper p-7"><h3 class="text-xl font-bold">Professional Educator's License</h3><p class="mt-2 font-semibold text-coral">California & North Carolina State Board of Education</p><p class="mt-4 leading-7">Endorsements: Elementary Education (K–6) and English as a Second Language (ESL K–12).</p></article><article class="rounded-3xl border border-sand bg-paper p-7"><h3 class="text-xl font-bold">Active Member</h3><p class="mt-2 font-semibold text-coral">Chinese Language Teachers Association of North Carolina</p><p class="mt-4 leading-7">Engages in state-level PLCs focused on language technology integration and curriculum mapping.</p></article></div></div></section>
+
+    <!-- AWARDS & HONORS：简历第 7 个内容模块 -->
+    <section id="honors" class="scroll-mt-20 bg-sand py-16 md:py-20"><div class="mx-auto max-w-6xl px-5"><div class="flex h-12 w-12 items-center justify-center rounded-2xl bg-coral/15 text-coral"><i class="fa-solid fa-award" aria-hidden="true"></i></div><p class="mt-5 text-sm font-bold uppercase tracking-[.18em] text-sage">07 / Awards & Honors</p><h2 class="section-title mt-3 font-serif text-4xl font-bold">Awards & Honors</h2><div class="mt-10 grid gap-5 md:grid-cols-3"><div class="rounded-3xl bg-paper p-7"><i class="fa-solid fa-medal text-2xl text-coral" aria-hidden="true"></i><p class="mt-4 font-bold">Phi Kappa Phi Honor Society</p><p class="mt-1 text-sm">Elected Member · Elon University</p></div><div class="rounded-3xl bg-paper p-7"><i class="fa-solid fa-star text-2xl text-coral" aria-hidden="true"></i><p class="mt-4 font-bold">Teacher of the Month Nominee</p><p class="mt-1 text-sm">Cox Mill Elementary School</p></div><div class="rounded-3xl bg-paper p-7"><i class="fa-solid fa-trophy text-2xl text-coral" aria-hidden="true"></i><p class="mt-4 font-bold">National Scholarship</p><p class="mt-1 text-sm">Shandong Agricultural Administrators' College</p></div></div></div></section>
+
+    <!-- 联系方式：额外网站功能，不属于原始履历内容；Formspree ID 需由本人配置 -->
+    <section id="contact" class="scroll-mt-20 bg-paper py-16 md:py-20"><div class="mx-auto max-w-2xl px-5 text-center"><div class="mx-auto flex h-12 w-12 items-center justify-center rounded-2xl bg-blush text-coral"><i class="fa-solid fa-paper-plane" aria-hidden="true"></i></div><p class="mt-5 text-sm font-bold uppercase tracking-[.18em] text-sage">Contact</p><h2 class="mt-3 font-serif text-4xl font-bold">Start a conversation.</h2><p class="mt-4 leading-7">For research, teaching, student support, and curriculum design opportunities.</p><!-- Formspree 表单：已接入专属提交端点；如需更换，请修改 action 中的 URL --><form action="https://formspree.io/f/xkodezde" method="POST" class="mt-8 rounded-3xl border border-sand bg-cream p-6 text-left"><input type="hidden" name="_subject" value="New portfolio website enquiry" /><div class="grid gap-4 sm:grid-cols-2"><div><label for="name" class="mb-2 block text-sm font-bold">Name</label><input id="name" name="name" type="text" required class="w-full rounded-xl border border-sand bg-white px-4 py-3 outline-none focus:border-coral" /></div><div><label for="visitor-email" class="mb-2 block text-sm font-bold">Email</label><input id="visitor-email" name="email" type="email" required class="w-full rounded-xl border border-sand bg-white px-4 py-3 outline-none focus:border-coral" /></div></div><div class="mt-4"><label for="message" class="mb-2 block text-sm font-bold">Message</label><textarea id="message" name="message" rows="5" required class="w-full rounded-xl border border-sand bg-white px-4 py-3 outline-none focus:border-coral"></textarea></div><button type="submit" class="mt-5 w-full rounded-xl bg-coral px-5 py-3 font-bold text-white transition hover:bg-ink"><i class="fa-solid fa-paper-plane mr-2"></i>Send message</button></form><div class="mt-6 flex justify-center gap-5 text-xl"><!-- GitHub 链接：将 # 替换为你的 GitHub 主页 URL --> <a href="#" target="_blank" rel="noopener" aria-label="GitHub profile" class="hover:text-coral"><i class="fa-brands fa-github"></i></a><!-- LinkedIn 链接：将 # 替换为你的 LinkedIn 主页 URL --> <a href="#" target="_blank" rel="noopener" aria-label="LinkedIn profile" class="hover:text-coral"><i class="fa-brands fa-linkedin"></i></a><!-- 邮件链接：修改 href 即可更换邮箱 --> <a href="mailto:supermugogogo@gmail.com" aria-label="Email Zongchao Mu" class="hover:text-coral"><i class="fa-solid fa-envelope"></i></a></div></div></section>
+  </main>
+  <footer class="bg-ink px-5 py-7 text-center text-sm text-white/75">© 2026 Belinda Mu · Educator & Researcher-in-Training</footer>
+  <!-- 研究模块增强：用原创研究插画替换原海报，并加入研究论文网页入口 -->
+  <script>
+    (function () {
+      const research = document.querySelector('#research');
+      if (!research) return;
+
+      const researchCard = research.querySelector('article');
+      if (researchCard) {
+        const paperLink = document.createElement('div');
+        paperLink.className = 'mt-7 rounded-2xl border border-sage/20 bg-sage/5 p-5';
+        paperLink.innerHTML = `
+          <div class="flex items-start gap-3">
+            <i class="fa-solid fa-file-lines mt-1 text-lg text-coral" aria-hidden="true"></i>
+            <div>
+              <p class="font-bold text-ink">Capstone Research Paper</p>
+              <p class="mt-1 text-sm leading-6">Read the project context, methodology, literature review, and selected references.</p>
+              <!-- 研究论文网页链接：如移动文件，请修改 href="research-paper.html" -->
+              <a href="research-paper.html" target="_blank" rel="noopener" class="mt-3 inline-flex text-sm font-bold text-coral hover:text-sage">Read research paper <i class="fa-solid fa-arrow-up-right-from-square ml-2"></i></a>
+            </div>
+          </div>`;
+        researchCard.appendChild(paperLink);
+      }
+
+      // 模块眉题：避免与下方大标题重复，同时保留编号与阅读层级。
+      const eyebrowLabels = {
+        education: '02 / Academic Foundation',
+        research: '04 / Inquiry & Practice',
+        experience: '05 / Classroom Impact',
+        licensure: '06 / Professional Standing',
+        honors: '07 / Recognition'
+      };
+      Object.entries(eyebrowLabels).forEach(([sectionId, label]) => {
+        const eyebrow = document.querySelector(`#${sectionId} p.mt-5`);
+        if (eyebrow) eyebrow.textContent = label;
+      });
+    })();
+  </script>
+</body>
+</html>

@@ -46,6 +46,32 @@
     #summary .flex.h-12.w-12 i, #education .flex.h-12.w-12 i, #skills .flex.h-12.w-12 i, #research .flex.h-12.w-12 i, #experience .flex.h-12.w-12 i, #licensure .flex.h-12.w-12 i, #honors .flex.h-12.w-12 i, #contact .flex.h-12.w-12 i { display: inline-block; }
     #summary > div > div:first-child, #education > div > div:first-child > div:first-child, #skills > div, #research > div > div:first-child, #experience > div, #licensure > div, #honors > div, #contact > div { padding-right: 0; }
     #summary > div > div:first-child > .flex.h-12.w-12, #education > div > div:first-child > div:first-child > .flex.h-12.w-12, #skills > div > .flex.h-12.w-12, #research > div > div:first-child > .flex.h-12.w-12, #experience > div > .flex.h-12.w-12, #licensure > div > .flex.h-12.w-12, #honors > div > .flex.h-12.w-12, #contact > div > .flex.h-12.w-12 { position: static; width: 3rem; height: 3rem; }
+    /* 紧凑学术作品集：首屏之外压缩留白，让卡片与细分隔线承担模块层级。 */
+    main > section[id] { padding-top: 2.75rem !important; padding-bottom: 2.75rem !important; border-top: 1px solid rgba(244, 229, 208, .95); }
+    main > section[id] .section-title, main > section[id] h2 { font-size: 2rem; line-height: 1.12; }
+    main > section[id] p.mt-5 { margin-top: .85rem; }
+    main > section[id] .mt-10 { margin-top: 1.5rem; }
+    main > section[id] .mt-8 { margin-top: 1.25rem; }
+    main > section[id] article.p-7, main > section[id] .p-7 { padding: 1.25rem; }
+    main > section[id] .rounded-3xl { border-radius: 1.25rem; }
+    #summary p.self-center { padding: 1.25rem 1.4rem; border: 1px solid #f4e5d0; border-radius: 1.25rem; background: #fffdf9; box-shadow: 0 8px 22px rgba(40, 59, 56, .04); }
+    #education article, #licensure article, #honors > div > div { box-shadow: 0 7px 18px rgba(40, 59, 56, .035); }
+    #skills .mt-10 { gap: 1rem; }
+    #skills article { border: 1px solid rgba(255,255,255,.16); padding: 1.25rem; }
+    #research figure { margin-top: 1.25rem; }
+    #research figure img { max-height: 290px; object-fit: cover; object-position: top; }
+    #research article { align-self: start; padding: 1.5rem; }
+    #research article ul { margin-top: 1.15rem; }
+    #research article .mt-7 { margin-top: 1.15rem; }
+    #experience .mt-10 { gap: 1rem; }
+    #experience article { padding: 1.35rem; }
+    #experience ul { margin-top: 1rem !important; }
+    #experience li { line-height: 1.4rem; }
+    #experience article .mt-6 { margin-top: 1rem; padding: 1rem; }
+    #contact { padding-top: 3.25rem !important; padding-bottom: 3.25rem !important; }
+    #contact form { margin-top: 1.25rem; padding: 1.25rem; }
+    #contact textarea { min-height: 6rem; }
+    @media (min-width: 768px) { main > section[id] { padding-top: 3.25rem !important; padding-bottom: 3.25rem !important; } }
   </style>
 </head>
 <body class="font-sans text-ink antialiased">

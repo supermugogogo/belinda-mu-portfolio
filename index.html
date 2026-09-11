@@ -41,6 +41,11 @@
     #summary > div, #education > div { position: relative; }
     #summary > div > div:first-child > .flex.h-12.w-12, #education > div > div:first-child > div:first-child > .flex.h-12.w-12, #skills > div > .flex.h-12.w-12, #research > div > div:first-child > .flex.h-12.w-12, #experience > div > .flex.h-12.w-12, #licensure > div > .flex.h-12.w-12, #honors > div > .flex.h-12.w-12, #contact > div > .flex.h-12.w-12 { width: 7.25rem; height: 4.5rem; }
     @media (max-width: 640px) { #summary > div > div:first-child, #education > div > div:first-child > div:first-child, #skills > div, #research > div > div:first-child, #experience > div, #licensure > div, #honors > div, #contact > div { padding-right: 6.5rem; } }
+    /* 移除所有生成插画，恢复简洁、统一的线性图标。 */
+    #summary .flex.h-12.w-12, #education .flex.h-12.w-12, #skills .flex.h-12.w-12, #research .flex.h-12.w-12, #experience .flex.h-12.w-12, #licensure .flex.h-12.w-12, #honors .flex.h-12.w-12, #contact .flex.h-12.w-12 { width: 3rem; height: 3rem; background-image: none !important; }
+    #summary .flex.h-12.w-12 i, #education .flex.h-12.w-12 i, #skills .flex.h-12.w-12 i, #research .flex.h-12.w-12 i, #experience .flex.h-12.w-12 i, #licensure .flex.h-12.w-12 i, #honors .flex.h-12.w-12 i, #contact .flex.h-12.w-12 i { display: inline-block; }
+    #summary > div > div:first-child, #education > div > div:first-child > div:first-child, #skills > div, #research > div > div:first-child, #experience > div, #licensure > div, #honors > div, #contact > div { padding-right: 0; }
+    #summary > div > div:first-child > .flex.h-12.w-12, #education > div > div:first-child > div:first-child > .flex.h-12.w-12, #skills > div > .flex.h-12.w-12, #research > div > div:first-child > .flex.h-12.w-12, #experience > div > .flex.h-12.w-12, #licensure > div > .flex.h-12.w-12, #honors > div > .flex.h-12.w-12, #contact > div > .flex.h-12.w-12 { position: static; width: 3rem; height: 3rem; }
   </style>
 </head>
 <body class="font-sans text-ink antialiased">

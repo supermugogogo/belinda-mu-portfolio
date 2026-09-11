@@ -36,6 +36,11 @@
     #summary > div > div:first-child > .flex.h-12.w-12, #education > div > div:first-child > div:first-child > .flex.h-12.w-12, #skills > div > .flex.h-12.w-12, #research > div > div:first-child > .flex.h-12.w-12, #experience > div > .flex.h-12.w-12, #licensure > div > .flex.h-12.w-12, #honors > div > .flex.h-12.w-12, #contact > div > .flex.h-12.w-12 { position: absolute; top: 0; right: 0; }
     #education .fa-book-open { display: none; }
     @media (min-width: 768px) { #summary, #education, #skills, #research, #experience, #licensure, #honors, #contact { padding-top: 4rem !important; padding-bottom: 4rem !important; } }
+    /* 让插画位于整块内容区的右上角，而非标题左栏的右侧；尺寸保持可见但不抢占内容。 */
+    #summary > div > div:first-child, #education > div > div:first-child > div:first-child { position: static; padding-right: 0; }
+    #summary > div, #education > div { position: relative; }
+    #summary > div > div:first-child > .flex.h-12.w-12, #education > div > div:first-child > div:first-child > .flex.h-12.w-12, #skills > div > .flex.h-12.w-12, #research > div > div:first-child > .flex.h-12.w-12, #experience > div > .flex.h-12.w-12, #licensure > div > .flex.h-12.w-12, #honors > div > .flex.h-12.w-12, #contact > div > .flex.h-12.w-12 { width: 7.25rem; height: 4.5rem; }
+    @media (max-width: 640px) { #summary > div > div:first-child, #education > div > div:first-child > div:first-child, #skills > div, #research > div > div:first-child, #experience > div, #licensure > div, #honors > div, #contact > div { padding-right: 6.5rem; } }
   </style>
 </head>
 <body class="font-sans text-ink antialiased">

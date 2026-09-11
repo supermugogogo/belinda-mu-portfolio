@@ -21,7 +21,7 @@
     /* 各模块插画：统一使用温暖教育者风格，保留足够留白避免影响文字阅读 */
     /* 取消背景大图，改为标题上方的小插画标识 */
     #summary, #education, #skills, #experience, #licensure, #honors, #contact { background-image: none; }
-    #summary .flex.h-12.w-12, #education .flex.h-12.w-12, #skills .flex.h-12.w-12, #research .flex.h-12.w-12, #experience .flex.h-12.w-12, #licensure .flex.h-12.w-12, #honors .flex.h-12.w-12, #contact .flex.h-12.w-12 { width: 9.5rem; height: 5.75rem; border-radius: 1rem; background-color: transparent; background-repeat: no-repeat; background-position: center; background-size: cover; }
+    #summary .flex.h-12.w-12, #education .flex.h-12.w-12, #skills .flex.h-12.w-12, #research .flex.h-12.w-12, #experience .flex.h-12.w-12, #licensure .flex.h-12.w-12, #honors .flex.h-12.w-12, #contact .flex.h-12.w-12 { width: 5rem; height: 3.25rem; border-radius: .75rem; background-color: transparent; background-repeat: no-repeat; background-position: center; background-size: contain; }
     #summary .flex.h-12.w-12 { background-image: url('illustration-summary.png'); }
     #education .flex.h-12.w-12 { background-image: url('illustration-education.png'); }
     #skills .flex.h-12.w-12 { background-image: url('illustration-skills.png'); }
@@ -30,6 +30,12 @@
     #licensure .flex.h-12.w-12, #honors .flex.h-12.w-12 { background-image: url('illustration-credentials.png'); }
     #contact .flex.h-12.w-12 { background-image: url('illustration-contact.png'); }
     #summary .flex.h-12.w-12 i, #education .flex.h-12.w-12 i, #skills .flex.h-12.w-12 i, #research .flex.h-12.w-12 i, #experience .flex.h-12.w-12 i, #licensure .flex.h-12.w-12 i, #honors .flex.h-12.w-12 i, #contact .flex.h-12.w-12 i { display: none; }
+    /* 紧凑版式：减少模块纵向留白，并把每个模块的小插画固定到标题区右上角。 */
+    #summary, #education, #skills, #research, #experience, #licensure, #honors, #contact { padding-top: 3rem !important; padding-bottom: 3rem !important; }
+    #summary > div > div:first-child, #education > div > div:first-child > div:first-child, #skills > div, #research > div > div:first-child, #experience > div, #licensure > div, #honors > div, #contact > div { position: relative; padding-right: 5.75rem; }
+    #summary > div > div:first-child > .flex.h-12.w-12, #education > div > div:first-child > div:first-child > .flex.h-12.w-12, #skills > div > .flex.h-12.w-12, #research > div > div:first-child > .flex.h-12.w-12, #experience > div > .flex.h-12.w-12, #licensure > div > .flex.h-12.w-12, #honors > div > .flex.h-12.w-12, #contact > div > .flex.h-12.w-12 { position: absolute; top: 0; right: 0; }
+    #education .fa-book-open { display: none; }
+    @media (min-width: 768px) { #summary, #education, #skills, #research, #experience, #licensure, #honors, #contact { padding-top: 4rem !important; padding-bottom: 4rem !important; } }
   </style>
 </head>
 <body class="font-sans text-ink antialiased">

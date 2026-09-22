@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://supermugogogo.github.io/belinda-mu-portfolio/sitemap.xml
